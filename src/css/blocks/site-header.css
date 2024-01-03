@@ -1,0 +1,8 @@
+.site-header {
+  --gutter: 32px;
+  margin-block-start: 40px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: space-between;
+}
