@@ -1,6 +1,6 @@
 .site-header {
   --gutter: 32px;
-  margin-block-start: 40px;
+  margin-block: 40px;
   display: flex;
   align-items: center;
   gap: 1em;

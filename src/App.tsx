@@ -1,10 +1,13 @@
+import HeroSection from './components/hero-section';
 import SiteHeader from './components/site-header';
 
 function App() {
   return (
     <>
       <SiteHeader />
-      <main>Bookmark landing page</main>
+      <main>
+        <HeroSection />
+      </main>
     </>
   );
 }

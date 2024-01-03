@@ -1,0 +1,35 @@
+.btn {
+  display: inline-block;
+  padding: 16px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+button.btn {
+  border: none;
+}
+
+.btn.primary {
+  --text-color: #fff;
+  --bg-color: hsl(var(--clr-soft-blue));
+}
+
+.btn.secondary {
+  --text-color: hsl(var(--clr-very-dark-blue));
+  --bg-color: #f7f7f7;
+}
+
+.btn.tertiary {
+  --text-color: #fff;
+  --bg-color: hsl(var(--clr-soft-red));
+}

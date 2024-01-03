@@ -3,7 +3,9 @@
 @import 'globals/global.css';
 
 /* Blocks */
+@import 'blocks/button.css';
 @import 'blocks/site-header.css';
+@import 'blocks/hero-section.css';
 
 /* Utilities */
 @import 'utilities/wrapper.css';

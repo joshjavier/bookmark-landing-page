@@ -1,0 +1,33 @@
+.hero {
+  text-align: center;
+}
+
+.hero .image img {
+  margin-inline: auto;
+}
+
+.hero .wrapper {
+  --gutter: 40px;
+}
+
+.hero h2 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.3;
+  margin-block-start: 57px;
+}
+
+.hero p {
+  color: hsl(var(--clr-grayish-blue));
+  line-height: 1.55;
+  letter-spacing: -0.48px;
+  margin-block-start: 18px;
+}
+
+.hero .cta {
+  margin-block-start: 31px;
+}
+
+.hero .cta > * + * {
+  margin-inline-start: 15.5px;
+}
