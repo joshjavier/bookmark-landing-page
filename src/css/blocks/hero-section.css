@@ -1,5 +1,6 @@
 .hero {
   text-align: center;
+  margin-block-start: 74px;
 }
 
 .hero .image img {

@@ -4,8 +4,10 @@
 
 /* Blocks */
 @import 'blocks/button.css';
+@import 'blocks/tabs.css';
 @import 'blocks/site-header.css';
 @import 'blocks/hero-section.css';
+@import 'blocks/features-section.css';
 
 /* Utilities */
 @import 'utilities/wrapper.css';

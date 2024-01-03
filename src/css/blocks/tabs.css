@@ -1,0 +1,54 @@
+.tabs {
+  margin-block-start: 40px;
+}
+
+[role='tablist'] {
+  display: flex;
+  flex-direction: column;
+}
+
+[role='tab'] {
+  border: none;
+  border-bottom: 1px solid #e7e9ee;
+  background-color: transparent;
+  color: hsl(var(--clr-grayish-blue));
+  padding-block: 19px;
+  letter-spacing: 0.48px;
+  cursor: pointer;
+  position: relative;
+}
+
+[role='tab']:first-child {
+  border-top: 1px solid #e7e9ee;
+}
+
+[role='tab']:hover {
+  color: hsl(var(--clr-soft-red));
+  transition: color 300ms;
+}
+
+[role='tab'][aria-selected='true'] {
+  color: hsl(var(--clr-very-dark-blue));
+}
+
+[role='tab'][aria-selected='true']::after {
+  content: '';
+  background-color: hsl(var(--clr-soft-red));
+  position: absolute;
+  width: 143px;
+  height: 5px;
+  bottom: 0;
+  left: 50%;
+  translate: -50%;
+}
+
+[role='tabpanel'] {
+  margin-block-start: 72px;
+}
+
+[role='tabpanel'] h3 {
+  margin-block-start: 80px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+}
