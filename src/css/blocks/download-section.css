@@ -1,0 +1,14 @@
+.download {
+  --gutter: 34px;
+  margin-block-start: 149px;
+  text-align: center;
+}
+
+.download ul {
+  --gutter: 48px;
+  margin-block: 39px;
+}
+
+.download ul li + li {
+  margin-block-start: 40px;
+}

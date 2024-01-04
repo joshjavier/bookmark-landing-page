@@ -5,3 +5,9 @@ export type Feature = {
   title: string;
   description: string;
 };
+
+export type Browser = {
+  name: string;
+  minVersion: string;
+  logo: string;
+};

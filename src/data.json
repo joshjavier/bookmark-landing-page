@@ -21,5 +21,22 @@
       "title": "Share your bookmarks",
       "description": "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button."
     }
+  ],
+  "browsers": [
+    {
+      "name": "Chrome",
+      "minVersion": "62",
+      "logo": "/images/logo-chrome.svg"
+    },
+    {
+      "name": "Firefox",
+      "minVersion": "55",
+      "logo": "/images/logo-firefox.svg"
+    },
+    {
+      "name": "Opera",
+      "minVersion": "46",
+      "logo": "/images/logo-opera.svg"
+    }
   ]
 }
