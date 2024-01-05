@@ -11,3 +11,9 @@ export type Browser = {
   minVersion: string;
   logo: string;
 };
+
+export type FAQ = {
+  id: number;
+  question: string;
+  answer: string;
+};

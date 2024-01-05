@@ -1,0 +1,14 @@
+.faq {
+  --gutter: 32px;
+  text-align: center;
+  margin-block-start: 139px;
+}
+
+.faq ul {
+  padding-inline-start: 0;
+  margin-block: 45px 48px;
+}
+
+.faq .btn {
+  padding-inline: 24px;
+}

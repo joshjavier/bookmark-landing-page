@@ -6,10 +6,12 @@
 @import 'blocks/button.css';
 @import 'blocks/tabs.css';
 @import 'blocks/b-card.css';
+@import 'blocks/accordion.css';
 @import 'blocks/site-header.css';
 @import 'blocks/hero-section.css';
 @import 'blocks/features-section.css';
 @import 'blocks/download-section.css';
+@import 'blocks/faq-section.css';
 
 /* Utilities */
 @import 'utilities/wrapper.css';
