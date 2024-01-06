@@ -1,0 +1,30 @@
+section.cta {
+  --gutter: 32px;
+  padding-block-start: 72px;
+  min-height: 360px;
+  text-align: center;
+  background-color: hsl(var(--clr-soft-blue));
+  color: #fff;
+  margin-block-start: 122px;
+}
+
+section.cta * {
+  line-height: normal;
+}
+
+section.cta .eyebrow {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 4.03px;
+  text-transform: uppercase;
+}
+
+section.cta .title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-block-start: 13px;
+}
+
+section.cta .btn {
+  box-shadow: none;
+}

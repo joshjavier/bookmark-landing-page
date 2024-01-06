@@ -1,3 +1,4 @@
+import CtaSection from './components/cta-section';
 import DownloadSection from './components/download-section';
 import FaqSection from './components/faq-section';
 import FeaturesSection from './components/features-section';
@@ -13,6 +14,7 @@ function App() {
         <FeaturesSection />
         <DownloadSection />
         <FaqSection />
+        <CtaSection />
       </main>
     </>
   );

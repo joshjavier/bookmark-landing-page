@@ -17,6 +17,7 @@ a.btn {
 
 button.btn {
   border: none;
+  cursor: pointer;
 }
 
 .btn.primary {

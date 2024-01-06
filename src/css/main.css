@@ -7,11 +7,14 @@
 @import 'blocks/tabs.css';
 @import 'blocks/b-card.css';
 @import 'blocks/accordion.css';
+@import 'blocks/contact-form.css';
 @import 'blocks/site-header.css';
 @import 'blocks/hero-section.css';
 @import 'blocks/features-section.css';
 @import 'blocks/download-section.css';
 @import 'blocks/faq-section.css';
+@import 'blocks/cta-section.css';
 
 /* Utilities */
 @import 'utilities/wrapper.css';
+@import 'utilities/visually-hidden.css';
