@@ -14,6 +14,7 @@
 @import 'blocks/download-section.css';
 @import 'blocks/faq-section.css';
 @import 'blocks/cta-section.css';
+@import 'blocks/site-footer.css';
 
 /* Utilities */
 @import 'utilities/wrapper.css';

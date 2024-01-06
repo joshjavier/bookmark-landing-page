@@ -60,5 +60,16 @@
       "question": "What about other Chromium browsers?",
       "answer": "Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit."
     }
+  ],
+  "navlinks": ["Features", "Pricing", "Contact"],
+  "socials": [
+    {
+      "name": "Facebook",
+      "icon": "/images/icon-facebook.svg"
+    },
+    {
+      "name": "Twitter",
+      "icon": "/images/icon-twitter.svg"
+    }
   ]
 }

@@ -1,0 +1,38 @@
+.site-footer {
+  background-color: hsl(var(--clr-very-dark-blue));
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.site-footer ul {
+  padding-inline-start: 0;
+}
+
+.site-footer nav ul {
+  line-height: normal;
+  margin-block-start: 38px;
+}
+
+.site-footer nav ul li + li {
+  margin-block-start: 31px;
+}
+
+.site-footer nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1.8px;
+}
+
+.site-footer nav a:hover {
+  text-decoration: underline;
+}
+
+.site-footer .socials {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  margin-block: 47px 0;
+}
