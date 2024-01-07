@@ -5,6 +5,7 @@
   padding-block: 49px 23px;
   border-radius: 15px;
   box-shadow: var(--shadow-elevation-medium);
+  max-inline-size: 280px;
 }
 
 .b-card > * {

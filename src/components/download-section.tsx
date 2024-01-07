@@ -30,15 +30,15 @@ function DownloadSection() {
           We’ve got more browsers in the pipeline. Please do let us know if
           you’ve got a favourite you’d like us to prioritize.
         </p>
-      </div>
 
-      <ul role="list" className="wrapper">
-        {browsers.map((browser) => (
-          <li key={browser.name}>
-            <Card browser={browser} />
-          </li>
-        ))}
-      </ul>
+        <ul role="list">
+          {browsers.map((browser) => (
+            <li key={browser.name}>
+              <Card browser={browser} />
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }
