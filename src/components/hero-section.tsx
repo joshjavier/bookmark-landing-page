@@ -12,18 +12,18 @@ function HeroSection() {
       <div className="wrapper">
         <h2 id="hero-label">A Simple Bookmark Manager</h2>
         <p>
-          A clean and simple interface to organize your favorite websites. Open
+          A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
+        <p className="cta">
+          <a href="#" className="btn primary">
+            Get it on Chrome
+          </a>
+          <a href="#" className="btn secondary">
+            Get it on Firefox
+          </a>
+        </p>
       </div>
-      <p className="cta">
-        <a href="#" className="btn primary">
-          Get it on Chrome
-        </a>
-        <a href="#" className="btn secondary">
-          Get it on Firefox
-        </a>
-      </p>
     </section>
   );
 }

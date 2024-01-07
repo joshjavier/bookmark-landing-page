@@ -1,5 +1,5 @@
 .hero {
-  --gutter: 40px;
+  --gutter: 32px;
   text-align: center;
   margin-block-start: 74px;
 }
@@ -19,8 +19,8 @@
 
 .hero .cta {
   margin-block-start: 31px;
-}
-
-.hero .cta > * + * {
-  margin-inline-start: 15.5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
