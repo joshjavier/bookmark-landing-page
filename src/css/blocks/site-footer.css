@@ -29,10 +29,6 @@
   text-decoration: underline;
 }
 
-.site-footer .socials {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  justify-content: center;
+.site-footer .social-links {
   margin-block: 47px 0;
 }

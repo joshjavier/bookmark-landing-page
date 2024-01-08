@@ -1,5 +1,6 @@
 import LogoBookmark from './logo-bookmark';
-import { navlinks, socials } from '../data.json';
+import { navlinks } from '../data.json';
+import SocialLinks from './social-links';
 
 function SiteFooter() {
   return (
@@ -17,16 +18,7 @@ function SiteFooter() {
           ))}
         </ul>
       </nav>
-      <ul role="list" className="socials" aria-label="Socials">
-        {socials.map((social) => (
-          <li key={social.name}>
-            <a href="#">
-              <span className="visually-hidden">{social.name}</span>
-              <img src={social.icon} alt="" />
-            </a>
-          </li>
-        ))}
-      </ul>
+      <SocialLinks />
     </footer>
   );
 }
