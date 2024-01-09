@@ -1,5 +1,6 @@
 .site-header {
   --gutter: 32px;
+  --wrapper-max-width: 1110px;
   margin-block: 40px;
   display: flex;
   align-items: center;

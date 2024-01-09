@@ -11,6 +11,7 @@ function IconMenu() {
     >
       <polyline points="0,1.5 18,1.5" />
       <polyline points="0,7.5 18,7.5" />
+      <polyline points="0,7.5 18,7.5" />
       <polyline points="0,13.5 18,13.5" />
     </svg>
   );
