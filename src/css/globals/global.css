@@ -49,6 +49,10 @@ p {
   letter-spacing: -0.48px;
 }
 
+a:not([class]):hover {
+  color: hsl(var(--clr-soft-red));
+}
+
 section {
   color: hsl(var(--clr-grayish-blue));
 }
