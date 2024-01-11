@@ -35,6 +35,8 @@ body {
   margin: 0;
   background-color: #fff;
   color: hsl(var(--clr-very-dark-blue));
+  /* Prevent the excess from the blue shapes from adding a horizontal scrollbar */
+  overflow-x: hidden;
 }
 
 h2,
