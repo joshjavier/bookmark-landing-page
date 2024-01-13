@@ -1,5 +1,5 @@
 .site-header {
-  --gutter: 32px;
+  --gutter: var(--32-48);
   --wrapper-max-width: 1110px;
   margin-block: 40px;
   display: flex;

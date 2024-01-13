@@ -3,7 +3,6 @@
   --gutter: clamp(0.625rem, -0.2113rem + 3.5681vw, 3rem);
   --wrapper-max-width: 1223px;
   text-align: center;
-  margin-block-start: 74px;
   /* Grows from 74px at 375w to 105px at 1440w */
   margin-block-start: clamp(4.625rem, 3.9428rem + 2.9108vw, 6.5625rem);
   display: flex;
@@ -34,16 +33,9 @@
 
 .hero h2 {
   font-size: 30px;
-  font-size: clamp(1.875rem, 1.4789rem + 1.6901vw, 3rem); /* 30 to 48 */
+  font-size: var(--30-48);
   margin-block-start: 0;
   text-wrap: wrap;
-}
-
-.hero p {
-  margin-block-start: 18px;
-  font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem); /* 16 to 18 */
-  /* Prevent typographic orphans */
-  text-wrap: pretty;
 }
 
 .hero .cta {

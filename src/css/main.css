@@ -3,6 +3,7 @@
 @import 'globals/global.css';
 
 /* Blocks */
+@import 'blocks/region.css';
 @import 'blocks/button.css';
 @import 'blocks/tabs.css';
 @import 'blocks/b-card.css';
