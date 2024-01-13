@@ -1,7 +1,7 @@
 function HeroSection() {
   return (
     <section className="hero wrapper" aria-label="Hero">
-      <div className="image">
+      <div className="image bg-blue-pill">
         <img
           src="/images/illustration-hero.svg"
           alt=""

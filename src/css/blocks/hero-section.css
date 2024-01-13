@@ -13,22 +13,10 @@
 
 .hero .image {
   position: relative;
-}
-
-.hero .image::after {
-  content: '';
-  position: absolute;
-  background-color: hsl(var(--clr-soft-blue));
-  z-index: -1;
-  border-top-left-radius: 99em;
-  border-bottom-left-radius: 99em;
-  width: 200%;
-  /* Grows from 169px at 320w to 352px at 701w */
-  height: clamp(10.5625rem, 0.9562rem + 48.0315vw, 22rem);
-  /* Grows from 46px at 320w to 100px at 701w */
-  top: clamp(2.875rem, 0.0404rem + 14.1732vw, 6.25rem);
+  /* Grows from 48px at 320w to 100px at 701w */
+  --bg-offset-top: clamp(3rem, 0.2703rem + 13.6483vw, 6.25rem);
   /* Grows from 60px at 375w to 193px at 701w */
-  left: clamp(3.75rem, -5.8119rem + 40.7975vw, 12.0625rem);
+  --bg-offset-left: clamp(3.75rem, -5.8119rem + 40.7975vw, 12.0625rem);
 }
 
 .hero .image img {
