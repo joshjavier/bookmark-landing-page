@@ -23,15 +23,16 @@ function Card({ browser }: { browser: Browser }) {
 
 function DownloadSection() {
   return (
-    <section className="download" aria-labelledby="download-label">
-      <div className="wrapper">
-        <h2 id="download-label">Download the extension</h2>
+    <section className="download region">
+      <div className="intro wrapper">
+        <h2>Download the extension</h2>
         <p>
           We’ve got more browsers in the pipeline. Please do let us know if
           you’ve got a favourite you’d like us to prioritize.
         </p>
-
-        <ul role="list">
+      </div>
+      <div className="wrapper">
+        <ul role="list" className="switcher">
           {browsers.map((browser) => (
             <li key={browser.name}>
               <Card browser={browser} />
