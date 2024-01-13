@@ -1,10 +1,15 @@
 .faq {
-  --gutter: 32px;
+  --gutter: var(--32-48);
+  --wrapper-max-width: 540px;
   text-align: center;
-  margin-block-start: 139px;
+  /* Grow from 139px at 375w to 154px at 1440w */
+  margin-block-start: clamp(8.6875rem, 8.3574rem + 1.4085vw, 9.625rem);
 }
 
 .faq ul {
   padding-inline-start: 0;
-  margin-block: 45px 48px;
+  /* Grow from 45px at 375w to 55px at 1440w */
+  margin-block-start: clamp(2.8125rem, 2.5924rem + 0.939vw, 3.4375rem);
+  /* Grow from 48px at 375w to 54px at 1440w */
+  margin-block-end: clamp(3rem, 2.868rem + 0.5634vw, 3.375rem);
 }

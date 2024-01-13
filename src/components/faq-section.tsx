@@ -3,7 +3,7 @@ import Accordion from './accordion';
 
 function FaqSection() {
   return (
-    <section className="faq" aria-labelledby="faq-label">
+    <section className="faq region" aria-labelledby="faq-label">
       <div className="wrapper">
         <h2 id="faq-label">Frequently Asked Questions</h2>
         <p>
