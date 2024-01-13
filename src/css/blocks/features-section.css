@@ -1,13 +1,18 @@
 .features {
-  --gutter: 32px;
+  --gutter: var(--32-48);
   text-align: center;
   margin-block-start: 149px;
 }
 
-.features h2 {
-  font-size: 24px;
+.features .intro {
+  --wrapper-max-width: 535px;
 }
 
-.features p {
-  margin-block-start: 11px;
+.features h2 {
+  font-size: var(--24-32);
+}
+
+.features .tabs-container {
+  --wrapper-max-width: 1104px;
+  margin-block-start: 40px;
 }

@@ -1,10 +1,7 @@
-.tabs {
-  margin-block-start: 40px;
-}
-
 [role='tablist'] {
   display: flex;
-  flex-direction: column;
+  max-inline-size: 729px;
+  margin-inline: auto;
 }
 
 [role='tab'] {
@@ -18,7 +15,7 @@
   position: relative;
 }
 
-[role='tab']:first-child {
+[aria-orientation='vertical'] [role='tab']:first-child {
   border-top: 1px solid #e7e9ee;
 }
 
@@ -42,11 +39,73 @@
   translate: -50%;
 }
 
-[role='tabpanel'] {
-  margin-block-start: 72px;
+/* Stretch active indicator to full width on horizontal orientation */
+[aria-orientation='horizontal'] [role='tab'][aria-selected='true']::after {
+  width: 100%;
 }
 
-[role='tabpanel'] h3 {
-  margin-block-start: 80px;
-  font-size: 24px;
+[role='tabpanel'] {
+  margin-block-start: 72px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+
+[role='tabpanel'][aria-hidden='true'] {
+  display: none;
+}
+
+[role='tabpanel'] .image {
+  position: relative;
+  width: 100%;
+  max-width: 536px;
+  margin-inline: auto;
+  flex-shrink: 0;
+  /* Grows from 30px at 320w to 83px at 600w */
+  --bg-offset-top: clamp(1.875rem, -1.9107rem + 18.9286vw, 5.1875rem);
+  /* Grows from 34px at 375w to 65px at 600w */
+  --bg-offset-right: clamp(2.125rem, -1.1042rem + 13.7778vw, 4.0625rem);
+}
+
+[role='tabpanel'] img {
+  margin-inline: auto;
+}
+
+[role='tabpanel'] .text {
+  margin-inline: auto;
+  max-inline-size: 443px;
+}
+
+[role='tabpanel'] .text :first-child {
+  font-size: var(--24-32);
+  margin-block-start: 0;
+}
+
+/* Hide the More Info button on smaller screens */
+[role='tabpanel'] .btn {
+  display: none;
+}
+
+@media screen and (min-width: 977px) {
+  [role='tabpanel'] {
+    flex-direction: row;
+    text-align: left;
+    gap: 3em;
+    justify-content: space-between;
+  }
+
+  /* Optical adjustment for the 2nd and 3rd images */
+  [role='tabpanel'] + [role='tabpanel'] .image img {
+    margin-inline-start: 75px;
+  }
+
+  [role='tabpanel'] .text {
+    margin-inline: 0;
+    margin-block-start: 62px;
+  }
+
+  [role='tabpanel'] .btn {
+    display: inline-block;
+    margin-block-start: 32px;
+  }
 }
