@@ -32,7 +32,6 @@
 }
 
 .hero h2 {
-  font-size: 30px;
   font-size: var(--30-48);
   margin-block-start: 0;
   text-wrap: wrap;
