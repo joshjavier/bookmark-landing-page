@@ -1,5 +1,6 @@
 section.cta {
-  --gutter: 32px;
+  --gutter: var(--32-48);
+  --wrapper-max-width: 442px;
   padding-block-start: 72px;
   min-height: 360px;
   text-align: center;
@@ -21,8 +22,14 @@ section.cta .eyebrow {
 
 section.cta .title {
   font-weight: 500;
-  font-size: 24px;
+  font-size: var(--24-32);
   margin-block-start: 13px;
+}
+
+@media screen and (min-width: 443px) {
+  section.cta .title {
+    margin-block-start: 37px;
+  }
 }
 
 section.cta .btn {

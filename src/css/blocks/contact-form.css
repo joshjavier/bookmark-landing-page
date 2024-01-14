@@ -6,13 +6,28 @@
   font-size: 14px;
 }
 
+@media screen and (min-width: 443px) {
+  .contact-form {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contact-form .field {
+    flex-grow: 1;
+  }
+}
+
+.contact-form .field {
+  position: relative;
+}
+
 .contact-form input,
 .contact-form button {
   border-radius: 6px;
 }
 
 .contact-form input {
-  padding: 16px 20px;
+  padding: 13px 17px;
   border: none;
   color: hsl(var(--clr-very-dark-blue));
   border: 3px solid transparent;
@@ -29,6 +44,19 @@
 .contact-form input[aria-invalid] {
   border-color: hsl(var(--clr-soft-red));
   position: relative;
+  z-index: 1;
+}
+
+.contact-form .field:has([aria-invalid])::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-soft-red));
+  background-image: url('/images/icon-error.svg');
+  top: 13px;
+  right: 13px;
   z-index: 1;
 }
 

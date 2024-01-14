@@ -57,7 +57,7 @@ function ContactForm() {
     if (email !== '') touched.current = true;
 
     if (touched.current) {
-      validateEmail(e.target);
+      validateEmail(e.target, { live: true });
     }
   };
 
@@ -67,7 +67,7 @@ function ContactForm() {
   };
 
   return (
-    <form className="contact-form" onSubmit={onSubmit}>
+    <form className="contact-form" onSubmit={onSubmit} noValidate>
       <div className="field">
         <label htmlFor="email" className="visually-hidden">
           Email address
