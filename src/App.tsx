@@ -11,6 +11,7 @@ function App() {
     <>
       <SiteHeader />
       <main>
+        <h1 className="visually-hidden">Bookmark landing page</h1>
         <HeroSection />
         <FeaturesSection />
         <DownloadSection />
