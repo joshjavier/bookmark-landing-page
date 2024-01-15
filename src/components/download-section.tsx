@@ -1,5 +1,11 @@
+import { useRef } from 'react';
 import { browsers } from '../data.json';
 import { Browser } from '../definitions';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Card({ browser }: { browser: Browser }) {
   return (
@@ -22,8 +28,28 @@ function Card({ browser }: { browser: Browser }) {
 }
 
 function DownloadSection() {
+  const container = useRef<HTMLElement>(null);
+
+  useGSAP(
+    () => {
+      // Fade in browser cards
+      gsap.from('.b-card', {
+        y: -40,
+        opacity: 0,
+        duration: 0.8,
+        ease: 'power3.out',
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: '.b-card',
+          start: 'top 60%',
+        },
+      });
+    },
+    { scope: container },
+  );
+
   return (
-    <section className="download region">
+    <section className="download region" ref={container}>
       <div className="intro wrapper">
         <h2>Download the extension</h2>
         <p>

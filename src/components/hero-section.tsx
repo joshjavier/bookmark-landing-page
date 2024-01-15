@@ -1,6 +1,24 @@
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { useRef } from 'react';
+
 function HeroSection() {
+  const container = useRef<HTMLElement>(null);
+
+  useGSAP(
+    () => {
+      gsap.from('.image img', {
+        y: 40,
+        opacity: 0,
+        ease: 'power3.out',
+        duration: 0.8,
+      });
+    },
+    { scope: container },
+  );
+
   return (
-    <section className="hero wrapper region" aria-label="Hero">
+    <section className="hero wrapper region" aria-label="Hero" ref={container}>
       <div className="image bg-blue-pill">
         <img
           src="/images/illustration-hero.svg"
