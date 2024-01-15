@@ -35,7 +35,7 @@ function BurgerMenu() {
       ro.disconnect();
       document.removeEventListener('focusin', closeOnTabOut);
     };
-  });
+  }, []);
 
   return (
     <div className="burger-menu" ref={root}>
